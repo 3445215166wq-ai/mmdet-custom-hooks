@@ -1,0 +1,33 @@
+# ===== 数据集 / 权重 / 训练产物：体积大，不入库 =====
+data/
+dataset/
+weights/
+work_dirs/
+mmdetection/
+*.pth
+*.pt
+*.onnx
+
+# ===== 日志里的大文件（events / scalars / bbox 预测结果） =====
+logs/*.tfevents.*
+logs/scalars.json
+*.bbox.json
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+Lib/
+Scripts/
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ===== 图形输出（可现场重跑生成） =====
+metrics_curve.png
+convergence_curve.png
